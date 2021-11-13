@@ -147,3 +147,85 @@ header{
   width: 100%;
   border: 0;
   }
+
+  /* ABOUT */
+.about{
+    padding: 5em 0em;
+  }
+
+.about__container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about__item{
+    text-align: center;
+}
+.about__item .about__layout{
+    display: flex;
+    justify-content: center;
+}
+.about__item .about__symbol{
+    font-size: 2em;
+    color: #000;
+    background: #fff;
+    border: 1px solid #7f7777;
+    cursor: pointer;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 98px;
+    transition: .5s all;
+}
+.about__item .about__symbol:hover{
+    background-color: #00cdce;
+}
+.about__item .about__symbol:hover i{
+    color: white;
+}
+.about__item .about__symbol i{
+    font-size: 28px;
+    line-height: 100px;
+    color: black;
+}
+.about__item .about__symbol .fa-key{
+    transform: rotate(270deg);
+}
+.about__item p{
+    line-height: 2em;
+    font-size: 15px;
+    color: #7f7777;
+    margin-top: 0.8em;
+}
+
+.about__details{
+    line-height: 2em;
+    font-size: 15px;
+    color: #7f7777;
+    margin-top: .8em;
+}
+
+.about__details h4{
+    color: #00cdce;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.about__details p{
+    margin: 5px 0 0 0;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    line-height: 29px;
+}

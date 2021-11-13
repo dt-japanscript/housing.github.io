@@ -8,7 +8,7 @@
     <title>Housing Web</title>
 
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -72,6 +72,55 @@
     </div>
 
     <!-- ABOUT -->
+    <div class="about">
+        <div class="about__container">
+            <h3>About</h3>
+            <div class="about__content">
+                <div class="about__item">
+                    <div class="about__layout">
+                        <div class="about__symbol">
+                            <i class="fa fa-home"></i>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="about__item">
+                    <div class="about__layout">
+                        <div class="about__symbol">
+                            <i class="fa fa-key"></i>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="about__item">
+                    <div class="about__layout">
+                        <div class="about__symbol">
+                            <i class="fa fa-money-bill-alt"></i>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <div class="about__details">
+                <h4>About us</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed odio consequat, tristique elit
+                    sed,
+                    molestie nulla.
+                    Mauris et quam leo. Quisque tincidunt facilisis rutrum. Etiam mattis arcu vitae velit sagittis
+                    vehicula.
+                    Duis posuere ex
+                    in mollis iaculis. Suspendisse tincidunt ut velit id euismod.vulputate turpis porta ex sodales,
+                    dignissim
+                    hendrerit eros
+                    sagittis. Curabitur lacinia dui ut luctus congue. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.
+                    Cras quis</p>
+            </div>
+        </div>
+    </div>
 
     <!-- STATS -->
 
@@ -98,8 +147,8 @@
         $(function () {
             $("#slider").responsiveSlides({
                 auto: true,
-                pager: true,
-                nav: true,
+                // pager: true,
+                // nav: true,
                 speed: 1000,
                 namespace: "callbacks",
                 before: function () {
