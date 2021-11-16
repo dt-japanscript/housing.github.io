@@ -88,6 +88,10 @@ header{
     color: #00cdce;
     border-bottom: 0px;
 }
+.header__content ul .active a{
+    color: #00cdce;
+    border-bottom: 0px;
+}
 
 /* SLIDER */
 .mainSlider .b1, .b2, .b3, .b4{
@@ -935,4 +939,29 @@ button.close {
 }
 .icons_button ul li a span.fab.fa-vk:hover{
 	color: #45668e;
+}
+
+/* Back to top */
+.backToTop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible{
+  visibility: visible;
+  opacity: 1;
+}
+
+.backToTop i{
+    color: #0BBBCC;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 36px;
+    border: 2px solid #0BBBCC;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
 }

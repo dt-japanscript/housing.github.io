@@ -33,13 +33,13 @@
         <div class="header__content">
             <a class="header__brand" href="#">Hous<span>ing</span></a>
             <nav class="nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Agents</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="mainNav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Agents</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -83,7 +83,7 @@
     </div>
 
     <!-- ABOUT -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="about__container">
             <h3>About</h3>
             <div class="about__content">
@@ -157,7 +157,7 @@
     </div>
 
     <!-- BLOG -->
-    <div class="blog">
+    <div class="blog" id="blog">
         <h3>Blog</h3>
         <div class="blog__content">
             <div class="blog__item">
@@ -258,7 +258,7 @@
     </div>
 
     <!-- GALLERY -->
-    <div class="gallery">
+    <div class="gallery" id="portfolio">
         <h3>Portfolio</h3>
         <div class="gallery__grids">
             <div class="gallery__item">
@@ -354,7 +354,7 @@
     </div>
 
     <!-- TEAM -->
-    <div class="team">
+    <div class="team" id="team">
         <h3>Our Agents</h3>
         <div class="team__container">
             <div class="team-info">
@@ -476,6 +476,11 @@
         </div>
     </div>
 
+    <!-- Back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -545,6 +550,23 @@
         });
     </script>
     <!-- //gallery-lightbox -->
+
+    <!-- Back to top JS -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backToTop.js"></script>
+
+    <!-- Navigation bar JS -->
+    <script>
+        var mainNav = document.getElementById("mainNav")
+        var listNav = mainNav.getElementsByTagName("li")
+        for (var i = 0; i < listNav.length; i++) {
+            listNav[i].addEventListener("click", function () {
+                var current = document.querySelector("#mainNav .active");
+                current.className = current.className.replace("active", "");
+                this.className += "active";
+            });
+        }
+    </script>
 
 </body>
 
