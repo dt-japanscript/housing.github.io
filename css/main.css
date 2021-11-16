@@ -702,3 +702,93 @@ button.close {
 	background-color:#dfdfdf;
 	outline: none;
 }
+
+/* TEAM */
+.team{
+    padding: 5em 0em;
+}
+.team__container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.team-info{
+    overflow: hidden;	
+}
+.team-info img{
+	width:100%;
+}
+.team-caption h4{
+    margin: 0;
+    color: #00cdce;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom:5px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.team-caption p{
+	color: #FFFFFF;
+    font-size: .9em;
+    margin: 0;
+}
+.team-caption ul{
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+.team-caption ul li{
+    display: inline-block;
+	    margin: 0 10px;
+}
+.team-caption ul li a {
+	color: #333;
+    text-align: center;
+}
+.team-caption ul li a span.fab.fa-facebook-f{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+}
+.team-caption ul li a span.fab.fa-facebook-f:hover {
+    background: #3b5998;
+}
+.team-caption ul li a span.fab.fa-twitter{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+}
+.team-caption ul li a span.fab.fa-twitter:hover{
+	background: #55acee;
+}
+.team-caption ul li a span.fa.fa-rss{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border: solid 2px #FFF;
+    background: none;
+    color: #FFF;
+    transition: 0.5s all;
+}
+.team-caption ul li a span.fa.fa-rss:hover{
+	background: #f26522;
+}
+.team-caption {
+    background: rgba(0, 0, 0, 0.79);
+    padding:1.5em 1em;
+    text-align: center;
+    width: 100%;
+    transition: .5s all;
+}
+.team-info:hover .team-caption h4{
+	color:#FFFFFF;
+}
